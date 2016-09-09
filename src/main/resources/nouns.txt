@@ -1,0 +1,22 @@
+sun
+moon
+ship
+pirate
+table
+computer
+the janitor
+cabinet
+cupboard
+chair
+script
+log
+forest
+window
+car
+bus
+street
+desert
+the sea
+wall
+office
+company
