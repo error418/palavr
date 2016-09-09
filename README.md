@@ -5,7 +5,7 @@ Generates dummy logging output over SLF4J
 
 ## Intention
 
-This library suits you in case you need a way to generate meaningless log entries for testing purposes.
+This library suits you in case you need a way to generate meaningless log entries for testing purposes on runtime.
 
 ## Usage
 
