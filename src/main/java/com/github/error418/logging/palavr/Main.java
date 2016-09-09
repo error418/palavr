@@ -9,7 +9,7 @@ public class Main {
 		
 		Thread t1 = new Thread(new PalavrRunnable("t1", messages, 1500));
 		Thread t2 = new Thread(new PalavrRunnable("t1", messages, 4100));
-		Thread t3 = new Thread(new PalavrRunnable("t1", messages, 16000));
+		Thread t3 = new Thread(new PalavrRunnable("t1", messages, 7218));
 	
 		t1.start();
 		t2.start();
