@@ -1,6 +1,8 @@
 # Palavr
 Generates dummy logging output over SLF4J
 
+[![Build Status](https://travis-ci.org/error418/palavr.svg?branch=master)](https://travis-ci.org/error418/palavr)
+
 ## Intention
 
 This library suits you in case you need a way to generate meaningless log entries for testing purposes.
