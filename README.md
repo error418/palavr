@@ -23,4 +23,4 @@ t3.start();
 
 ### slf4j
 
-Palavr utilizes (slf4j)(http://www.slf4j.org/) for its logging. This enables you to use any slf4j-wrapped log implementation.
+Palavr utilizes [slf4j](http://www.slf4j.org/) for its logging. This enables you to use any slf4j-wrapped log implementation.
