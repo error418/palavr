@@ -1,9 +1,11 @@
 # Palavr
 Generates dummy logging output over SLF4J
 
+[![Build Status](https://travis-ci.org/error418/palavr.svg?branch=master)](https://travis-ci.org/error418/palavr)
+
 ## Intention
 
-This library suits you in case you need a way to generate meaningless log entries for testing purposes.
+This library suits you in case you need a way to generate meaningless log entries for testing purposes on runtime.
 
 ## Usage
 
@@ -23,4 +25,4 @@ t3.start();
 
 ### slf4j
 
-Palavr utilizes (slf4j)(http://www.slf4j.org/) for its logging. This enables you to use any slf4j-wrapped log implementation.
+Palavr utilizes [slf4j](http://www.slf4j.org/) for its logging. This enables you to use any slf4j-wrapped log implementation.
