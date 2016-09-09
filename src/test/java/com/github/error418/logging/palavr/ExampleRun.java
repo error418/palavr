@@ -3,7 +3,7 @@ package com.github.error418.logging.palavr;
 import com.github.error418.logging.palavr.config.DefaultPalavrMessages;
 import com.github.error418.logging.palavr.config.PalavrMessages;
 
-public class Main {
+public class ExampleRun {
 	public static void main(String...strings) {
 		PalavrMessages messages = new DefaultPalavrMessages();
 		
