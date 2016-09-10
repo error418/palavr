@@ -1,0 +1,10 @@
+logging %s out from %s
+logging %s in to %s
+extracting %s from %s
+opening channel to %s
+looking for %s
+searching for %s in %s
+cooling down %s
+sending %s
+working on %s
+linking %s to %s
