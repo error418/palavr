@@ -3,21 +3,21 @@ package com.github.error418.logging.palavr;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.github.error418.logging.palavr.config.DefaultPalavrMessages;
-import com.github.error418.logging.palavr.config.PalavrMessages;
+import com.github.error418.logging.palavr.config.DefaultPalavrMessageProvider;
+import com.github.error418.logging.palavr.config.PalavrMessageProvider;
 
 public class Palavr {
 	private final Logger logger;
-	private final PalavrMessages messages;
+	private final PalavrMessageProvider messages;
 	
 	/**
-	 * Creates a Palavr instance with the {@link DefaultPalavrMessages} Message Provider.
+	 * Creates a Palavr instance with the {@link DefaultPalavrMessageProvider} Message Provider.
 	 * 
 	 * @param loggerClassName the class name to create the logger for
 	 */
 	public Palavr(String loggerClassName) {
 		logger = LoggerFactory.getLogger(loggerClassName);
-		this.messages = new DefaultPalavrMessages();
+		this.messages = new DefaultPalavrMessageProvider();
 	}
 	
 	/**
@@ -26,7 +26,7 @@ public class Palavr {
  	 * @param loggerClassName the class name to create the logger for
 	 * @param messages the log message provider to use
 	 */
-	public Palavr(String loggerClassName, PalavrMessages messages) {
+	public Palavr(String loggerClassName, PalavrMessageProvider messages) {
 		logger = LoggerFactory.getLogger(loggerClassName);
 		this.messages = messages;
 	}

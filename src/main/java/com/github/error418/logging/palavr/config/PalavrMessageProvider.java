@@ -4,7 +4,7 @@ package com.github.error418.logging.palavr.config;
  * Acts as a Message Provider. 
  * 
  */
-public interface PalavrMessages {
+public interface PalavrMessageProvider {
 	
 	/**
 	 * Returns a message

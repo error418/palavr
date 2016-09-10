@@ -1,6 +1,6 @@
 package com.github.error418.logging.palavr;
 
-import com.github.error418.logging.palavr.config.PalavrMessages;
+import com.github.error418.logging.palavr.config.PalavrMessageProvider;
 
 public class PalavrRunnable implements Runnable {
 	
@@ -14,7 +14,7 @@ public class PalavrRunnable implements Runnable {
 	 * @param messages the log message provider to use
 	 * @param sleep the time to sleep after sending a log message
 	 */
-	public PalavrRunnable(String loggerClassName, PalavrMessages palavrMessages, long sleep) {
+	public PalavrRunnable(String loggerClassName, PalavrMessageProvider palavrMessages, long sleep) {
 		this.palavr = new Palavr(loggerClassName, palavrMessages);
 		this.sleep = sleep;
 	}

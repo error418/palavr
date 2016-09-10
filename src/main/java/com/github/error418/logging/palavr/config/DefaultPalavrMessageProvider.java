@@ -9,12 +9,21 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 
-public class DefaultPalavrMessages implements PalavrMessages {
+/**
+ * Builds random messages from two files.
+ * 
+ */
+public class DefaultPalavrMessageProvider implements PalavrMessageProvider {
 
 	private final List<String> nouns;
 	private final List<String> messages;
 	
-	public DefaultPalavrMessages() {
+	/**
+	 * Default constructor.
+	 * 
+	 * Loads the messages from files located in the classpath.
+	 */
+	public DefaultPalavrMessageProvider() {
 		
 		List<String> nouns = new ArrayList<String>();
 		List<String> messages = new ArrayList<String>();
@@ -32,10 +41,10 @@ public class DefaultPalavrMessages implements PalavrMessages {
 		try {
 			messages.addAll(FileUtils.readLines(new File(ClassLoader.class.getResource("/message.txt").toURI()), StandardCharsets.UTF_8));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			messages.add("Something went wrong while loading the messages file.");
 			e.printStackTrace();
 		} catch (URISyntaxException e) {
-			// TODO Auto-generated catch block
+			nouns.add("[no nouns could be loaded");
 			e.printStackTrace();
 		}
 		
@@ -47,7 +56,7 @@ public class DefaultPalavrMessages implements PalavrMessages {
 		Long index = Math.round(Math.random() * (list.size() - 1));
 		return list.get(index.intValue());
 	}
-	
+
 	public String getMessage() {
 		return String.format(getRandomEntry(messages), getRandomEntry(nouns), getRandomEntry(nouns));
 	}
