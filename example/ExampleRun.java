@@ -4,9 +4,7 @@ import com.github.error418.logging.palavr.config.DefaultPalavrMessageProvider;
 import com.github.error418.logging.palavr.config.PalavrMessageProvider;
 
 /**
- * This class is not a JUnit test.
- * 
- * You may use this as an example for creating and using a {@link PalavrRunnable} instance.
+ * This class is an example for creating and using a {@link PalavrRunnable} instance.
  *
  */
 public class ExampleRun {
